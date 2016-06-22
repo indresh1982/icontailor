@@ -1,6 +1,4 @@
-jssor_slider_starter = function (containerId) {
-  setContentSize(containerId);
-
+var jssorSliderStarter = function (containerId) {
   var _SlideshowTransitions = [
     {$Idle:2000,$Duration:1800,x:1,$Delay:30,$Cols:10,$Rows:5,$Clip:15,$During:{$Left:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$JssorEasing$.$EaseInOutExpo,$Clip:$JssorEasing$.$EaseInOutQuad},$Outside:true,$Round:{$Top:0.8}},
     {$Idle:2000,$Duration:1800,x:1,$Delay:30,$Cols:10,$Rows:5,$Clip:15,$During:{$Left:[0.3,0.7]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$JssorEasing$.$EaseInOutExpo,$Clip:$JssorEasing$.$EaseInOutQuad},$Outside:true,$Round:{$Top:0.8}},
@@ -24,21 +22,8 @@ jssor_slider_starter = function (containerId) {
       $TransitionsOrder: 1,
       $ShowLink: true
     },
-    $LazyLoading: 2
+    $LazyLoading: 2,
+    $FillMode: 2
   };
-  var jssor_slider = new $JssorSlider$(containerId, options);
+  var jssorSlider = new $JssorSlider$(containerId, options);
 };
-$(function () {
-  jssor_slider_starter('slider1_container');
-});
-$( window ).resize(function() {
-  setContentSize();
-});
-function setContentSize(containerId) {
-  var dWidth = $( window ).width();
-  var dHeight = $( window ).height() - 170;
-  //$('#' + containerId).css('width',dWidth + 'px');
-  //$('#' + containerId).css('height',dHeight + 'px');
-  //$('#' + containerId + ' div').css('width',dWidth + 'px');
-  //$('#' + containerId + ' div').css('height',dWidth + 'px');
-}

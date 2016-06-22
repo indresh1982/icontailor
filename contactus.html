@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Tailor : Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
+</head>
+<body>
+<div id="wrapper">
+    <div class="content-wrap">
+        <h1>Contact Us</h1>
+        <p>Sales Email: <a href="mailto:sales@icontailor.com?Subject=Customer%20Query" target="_top">sales@icontailor.com</a></p>
+        <p>Query Email: <a href="mailto:info@icontailor.com?Subject=Customer%20Query" target="_top">info@icontailor.com</a></p>
+        <p>Phone: 304-804-ICON (304-804-4266)</p>
+        <div>
+            <div>
+                <label>Email Id: </label>
+                <input type="email" name="email">
+                <label>Contact Number: </label>
+                <input type="tel" name="phone">
+                <label>Description : </label>
+                <textarea name="desc" style="height:150px;"></textarea>
+            </div>
+            <div class="align-center">
+                <button type="button" class="primery">Submit</button>
+                <button type="button" onclick="window.location.href='/'">Home</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li class="orderNow"><a href="#overlay">Order Now</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+        <div class="footer-contact">
+            <ul class="nav">
+                <li>sales@icontailor.com</li>
+                <li>304-804-ICON</li>
+            </ul>
+        </div>
+        <p>Copyright &copy; 2016 www.icontailor.com All rights reserved.</p>
+    </div>
+</div>
+<div>
+    <div id="overlay">
+        <a href="#" class="close">&times;</a>
+        <iframe src="http://icontailor.com/" height="100%" width="100%"></iframe>
+    </div>
+    <div id="mask" onclick="document.location='#';"></div>
+</div>
+</body>
+</html>
